@@ -10,13 +10,27 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    // MARK: - Outlets
+    
+    @IBOutlet weak var textColorLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setupUI()
     }
     
-
+    // MARK: - Other methods
+    
+    fileprivate func setupUI() {
+        
+        // example of setting color programmatically
+        textColorLbl.textColor = UIColor(identifier: .TextColor)
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 
